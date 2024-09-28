@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.4 on win32)" generated="2024-09-28T11:35:44.115653" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\yalci\IdeaProjects\Amaris\test">
+<suite id="s1-s1" name="Contact Us" source="C:\Users\yalci\IdeaProjects\Amaris\test\contact_us.robot">
+<test id="s1-s1-t1" name="Test logo" line="53">
+<kw name="Go to the website Amaris">
+<kw name="Go To URL" owner="home_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:35:44.536498" level="INFO">Opening browser 'chrome' to base url 'https://amaris.com/'.</msg>
+<msg time="2024-09-28T11:35:45.380749" level="WARN">The chromedriver version (128.0.6613.84) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-28T11:35:44.536498" elapsed="31.850837"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-28T11:36:16.387335" elapsed="0.159973"/>
+</kw>
+<kw name="Refuse all cookies" owner="cookies">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${cookies_refuser}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-28T11:36:16.549308" elapsed="0.088544"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:16.651066" level="INFO">Clicking element 'id=CybotCookiebotDialogBodyButtonsWrapper'.</msg>
+<arg>${cookies_refuser}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:16.649067" elapsed="0.171104"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:16.548315" elapsed="0.271856"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:35:44.536498" elapsed="32.283673"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:35:44.536498" elapsed="32.283673"/>
+</kw>
+<kw name="Click on &quot;Contact us&quot;">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:16.820171" level="INFO">Clicking link 'id=contact'.</msg>
+<arg>${contact us}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:16.820171" elapsed="0.260840"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:16.820171" elapsed="0.260840"/>
+</kw>
+<kw name="On the new page, enter your first name, last name">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${first_name}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-28T11:36:17.081011" elapsed="1.745178"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:18.826189" level="INFO">Typing text 'john' into text field 'id=form-field-name'.</msg>
+<arg>${first_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:18.826189" elapsed="0.910167"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:19.736356" level="INFO">Typing text 'Doe' into text field 'id=form-field-forname'.</msg>
+<arg>${last_name}</arg>
+<arg>${surname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:19.736356" elapsed="0.169079"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:17.081011" elapsed="2.824424"/>
+</kw>
+<kw name="Enter an invalid email address">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:19.907435" level="INFO">Typing text 'john@gmail' into text field 'id=form-field-email'.</msg>
+<arg>${mail}</arg>
+<arg>${e_mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:19.907435" elapsed="0.162256"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:19.906435" elapsed="0.163256"/>
+</kw>
+<kw name="Under the inquiry section, select &quot;IT&quot;">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.069691" level="INFO">Clicking element 'id=form-field-inquiry'.</msg>
+<arg>${select inquiry}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.069691" elapsed="0.210619"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${IT}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.280310" elapsed="0.038425"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.318735" level="INFO">Clicking element 'xpath=//select[@name='form_fields[inquiry]']/option[@value='IT']'.</msg>
+<arg>${IT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.318735" elapsed="0.073453"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:20.069691" elapsed="0.322497"/>
+</kw>
+<kw name="Choose &quot;Belgium&quot; as the country">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.392188" level="INFO">Clicking element 'id=form-field-country'.</msg>
+<arg>${country}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.392188" elapsed="0.122786"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${Belgium}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.514974" elapsed="0.038079"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.553053" level="INFO">Clicking element 'xpath=//select[@name='form_fields[country]']/option[@value='Belgium']'.</msg>
+<arg>${Belgium}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.553053" elapsed="0.069947"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:20.392188" elapsed="0.230812"/>
+</kw>
+<kw name="Enter your message in the message box">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.623000" level="INFO">Typing text 'Hello !' into text field 'id=form-field-message'.</msg>
+<arg>${message}</arg>
+<arg>${your message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.623000" elapsed="0.165312"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:20.623000" elapsed="0.165312"/>
+</kw>
+<kw name="Check the &quot;Data Regulation&quot; checkbox to agree to the terms">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.788312" level="INFO">Executing JavaScript:
+window.scrollTo(0, 1000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 1000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.788312" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.788312" level="INFO">Clicking element 'id=form-field-optin'.</msg>
+<arg>${checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.788312" elapsed="0.156506"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:20.788312" elapsed="0.156506"/>
+</kw>
+<kw name="Click the &quot;Send Your Message&quot; button">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.947821" level="INFO">Executing JavaScript:
+window.scrollTo(0, 1000)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 1000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.946818" elapsed="0.009476"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${send_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.957294" elapsed="0.036724"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:20.994018" level="INFO">Clicking button 'id=ama-contact-apply'.</msg>
+<arg>${send_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:20.994018" elapsed="0.205722"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:20.945816" elapsed="0.254925"/>
+</kw>
+<kw name="Verify that the message &quot;This field is required.&quot; is displayed">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-28T11:36:23.203332" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-28T11:36:21.202732" elapsed="2.000600"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:23.250253" level="INFO">Current page contains text 'This field is required.'.</msg>
+<arg>${warning_message}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-28T11:36:23.203332" elapsed="0.046921"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:21.201731" elapsed="2.048522"/>
+</kw>
+<tag>Pozitif</tag>
+<status status="PASS" start="2024-09-28T11:35:44.536498" elapsed="38.713755"/>
+</test>
+<doc>Negative test scenario with invalid email for the contact page</doc>
+<status status="PASS" start="2024-09-28T11:35:44.178173" elapsed="39.072080"/>
+</suite>
+<suite id="s1-s2" name="Logo" source="C:\Users\yalci\IdeaProjects\Amaris\test\logo.robot">
+<test id="s1-s2-t1" name="Test logo" line="30">
+<kw name="Go to the website Amaris">
+<kw name="Go To URL" owner="home_page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:23.275116" level="INFO">Opening browser 'chrome' to base url 'https://amaris.com/'.</msg>
+<msg time="2024-09-28T11:36:23.856491" level="WARN">The chromedriver version (128.0.6613.84) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-28T11:36:23.275116" elapsed="29.965706"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-28T11:36:53.241822" elapsed="1.449413"/>
+</kw>
+<kw name="Refuse all cookies" owner="cookies">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${cookies_refuser}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-28T11:36:54.691235" elapsed="0.042244"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:54.733479" level="INFO">Clicking element 'id=CybotCookiebotDialogBodyButtonsWrapper'.</msg>
+<arg>${cookies_refuser}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:54.733479" elapsed="0.109369"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:54.691235" elapsed="0.151613"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:23.275116" elapsed="31.567732"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:23.275116" elapsed="31.567732"/>
+</kw>
+<kw name="Open the &quot;Partnerships&quot; page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:54.842848" level="INFO">Clicking element 'xpath=//a[@title='Partnerships']'.</msg>
+<arg>${partnersips}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:54.842848" elapsed="0.344655"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:54.842848" elapsed="0.344655"/>
+</kw>
+<kw name="On the new page, click on the AMARIS logo">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${logo}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-09-28T11:36:55.267386" elapsed="0.903613"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:56.171998" level="INFO">Clicking element 'xpath=//a[@class='navbar-brand']'.</msg>
+<arg>${logo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-28T11:36:56.170999" elapsed="0.231961"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:55.266385" elapsed="1.136575"/>
+</kw>
+<kw name="Verify that you are redirected back to the homepage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:58.538438" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<arg>${logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-28T11:36:56.404957" elapsed="2.367589"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-09-28T11:36:58.772546" level="INFO">${current_url} = https://amaris.com/</msg>
+<var>${current_url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-09-28T11:36:58.772546" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${current_url}</arg>
+<arg>${EXPECTED_URL}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-09-28T11:36:58.772546" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-28T11:36:56.403958" elapsed="2.368588"/>
+</kw>
+<tag>Pozitif</tag>
+<status status="PASS" start="2024-09-28T11:36:23.275116" elapsed="35.497430"/>
+</test>
+<doc>A positive tests for the site logo.</doc>
+<status status="PASS" start="2024-09-28T11:36:23.250253" elapsed="35.537916"/>
+</suite>
+<status status="PASS" start="2024-09-28T11:35:44.115653" elapsed="74.672516"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Pozitif</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Contact Us">Test.Contact Us</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Logo">Test.Logo</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-28T11:35:45.380749" level="WARN">The chromedriver version (128.0.6613.84) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-09-28T11:36:23.856491" level="WARN">The chromedriver version (128.0.6613.84) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.70); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
