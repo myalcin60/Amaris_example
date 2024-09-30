@@ -50,8 +50,8 @@ Verify that the message "This field is required." is displayed
     Page Should Contain    ${warning_message} 
    
 *** Test Cases ***
-Test logo
-    [Tags]  Pozitif
+Test contact us
+    [Tags]  Negatif  Amaris
     Go to the website Amaris
     Click on "Contact us"
     On the new page, enter your first name, last name

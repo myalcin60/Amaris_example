@@ -30,7 +30,7 @@ Verify that you are redirected back to the homepage
 
 *** Test Cases ***
 Test logo
-    [Tags]  Pozitif
+    [Tags]  Pozitif  Amaris 
     Go to the website AMARIS
     Open the "Partnerships" page
     On the new page, click on the AMARIS logo
